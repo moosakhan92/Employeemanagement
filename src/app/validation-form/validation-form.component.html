@@ -1,0 +1,42 @@
+<p>
+  validation-form works!
+</p>
+<div class="col-sm-4 col-sm-offset-4">
+  <h1>Validation Form</h1>
+  <form #valiForm="ngForm" (ngSubmit)="onSubmit(valiForm.value)" novalidate>
+    <div class="form-group">
+      <label>Name:</label>
+      <input class="form-control" #nameRef="ngModel" required minlength="3" maxlength="10" type="text" ngModel name="name"  />
+      <div [hidden]="nameRef.valid || nameRef.pristine" style="color: red">Enter Name</div>
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input class="form-control" type="email" ngModel name="email" #emailRef="ngModel" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"/>
+      <div *ngIf="emailRef.errors && emailRef.dirty" style="color: red">
+        <div [hidden]="!emailRef.errors.required">Enter Email Address</div>
+        <div [hidden]="!emailRef.errors.pattern">Enter Correct Email</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Phone:</label>
+      <input class="form-control" type="number" pattern="^[1-9][0-9]{9}$" ngModel name="phone" #phoneRef="ngModel" required/>
+      <div *ngIf="phoneRef.errors && phoneRef.dirty" style="color: red">
+        <div [hidden]="!phoneRef.errors.required">Enter Phone Number</div>
+        <div [hidden]="!phoneRef.errors.pattern">Enter Correct Phone Number</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>City:</label>
+      <input class="form-control" type="text" ngModel name="city" />
+    </div>
+    <div class="form-group">
+      <button [disabled]="!valiForm.form.valid" class="form-control" type="submit" class="btn btn-success">Send</button>
+    </div>
+  </form>
+  <h2>Results:</h2>
+  <p>{{file3.name}}
+    <br>{{file3.email}}
+    <br>{{file3.phone}}
+    <br>{{file3.city}}
+  </p>
+</div>

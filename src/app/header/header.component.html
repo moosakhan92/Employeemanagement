@@ -1,11 +1,11 @@
 <div>
   <div class="row">
     <div class="col-xs-12">
-      
+
       <div class="nav nav-tabs-justified">
-          <div class="dropdown">
-              <img width="68" height="34" alt="PRD LOGO" src="../assets/prdlogo.png"/>
-            </div>
+        <div class="dropdown">
+          <img width="68" height="34" alt="PRD LOGO" src="../assets/prdlogo.png" />
+        </div>
         <div class="dropdown">
           <button class="btn btn-primary btn-block" data-toggle="dropdown">BOOKING</button>
           <ul class="dropdown-menu">
@@ -41,7 +41,7 @@
               <a routerLink="page-not-found">DISPATCH STOCK TRANSFER</a>
             </li>
             <li>
-              <a routerLink="page-not-found">SHORT EXCESS</a>
+              <a routerLink="login">SHORT EXCESS</a>
             </li>
             <li>
               <a routerLink="page-not-found">DISPATCH EXTRA GRS</a>
@@ -69,11 +69,18 @@
             <li>
               <a routerLink="page-not-found">RUNSHEET</a>
             </li>
-            <li>
-              <a routerLink="page-not-found">DELIVERY PENDING BY RUNSHEET</a>
-            </li>
-            <li>
-              <a routerLink="page-not-found">DELIVERY PENDING WITHOUT RUNSHEET</a>
+            <li class="dropdown-submenu">
+              <a data-toggle="dropdown" href="#">New dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a routerLink="gr">DELIVERY PENDING BY RUNSHEET</a>
+                </li>
+                <li>
+                  <a routerLink="page-not-found">DELIVERY PENDING WITHOUT RUNSHEET</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -160,7 +167,7 @@
           <button class="btn btn-primary" data-toggle="dropdown">POD</button>
           <ul class="dropdown-menu">
             <li>
-              <a routerLink="home">PENDING POD</a>
+              <a routerLink="myform">PENDING POD</a>
             </li>
           </ul>
         </div>
@@ -292,7 +299,7 @@
           <button class="btn btn-primary" data-toggle="dropdown">TRACK</button>
           <ul class="dropdown-menu">
             <li>
-              <a routerLink="home">TRACK BY</a>
+              <a routerLink="newform">TRACK BY</a>
             </li>
           </ul>
         </div>
@@ -408,3 +415,4 @@
     </div>
   </div>
 </div>
+<hr>

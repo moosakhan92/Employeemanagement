@@ -1,0 +1,28 @@
+<p>
+  userform works!
+</p>
+
+<div style="clear: both;">
+  <div class="col-md-6 col-md-offset-3 panel panel-primary">
+    <div class="panel-heading">
+      <h2>Add Employee</h2>
+    </div>
+    <div class="panel-body">
+      <form #addEmpForm="ngForm" (ngSubmit)="mysubmit(addEmpForm.value)">
+        ID:
+        <input type="number" name="id" ngModel>
+        <br/> Name:
+        <input type="text" name="name" ngModel>
+        <br/> Salary:
+        <input type="number" name="salary" ngModel>
+        <br/>
+        <input type="submit" value="submit" class="btn btn-primary" />
+      </form>
+      {{jsfile.id}} 
+      <br>{{jsfile.name}}
+      <br>{{jsfile.salary}}<br>
+      <p *ngIf="chk">{{msg}}</p>
+    </div>
+  </div>
+</div>
+<hr>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PRD Logistics</title>
+  <title>Employee Management</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,11 +11,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!-- <script src="bootstrap/css/bootstrap.min.css" rel="stylesheet"></script> -->
-</head>
+  </head>
 
 <body>
-  <app-root></app-root>
+<app-root></app-root>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDdOelqtoOGOKQPPCrlog7ZRJuix3KGKyA",
+    authDomain: "mkukproject.firebaseapp.com",
+    databaseURL: "https://mkukproject.firebaseio.com",
+    projectId: "mkukproject",
+    storageBucket: "mkukproject.appspot.com",
+    messagingSenderId: "322889307764"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
-<style>
-</style>
+
 </html>

@@ -1,0 +1,19 @@
+<p>
+  getjson works!
+</p>
+<div style="margin: 5px; padding: 5px;">
+  <table class="table table-bordered">
+    <tr>
+      <th>ID</th>
+      <th> Name</th>
+      <th> Salary</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngFor="let js of datafile">
+      <td>{{js.id}}</td>
+      <td>{{js.name}}</td>
+      <td>{{js.salary}}</td>
+      <!-- <td (click)="deleteemp(js.id)"><a href="#">delete</a></td> -->
+    </tr>
+  </table>
+</div>

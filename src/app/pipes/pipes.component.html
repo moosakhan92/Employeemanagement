@@ -1,0 +1,41 @@
+<hr>
+<p>
+  pipes works!
+</p>
+<div>
+<h1>Pipes Examples</h1>
+<h3>String Pipes</h3>
+Name Normal: {{name}} <br>
+Uppercase: {{name | uppercase}} <br>
+Lowercase: {{name | lowercase}} <br>
+Slice Cut: {{name | slice:'2':'7'}} <br><br>
+
+<h3>Number Pipes</h3>
+Currency Normal: {{salary}} <br>
+Currency bydefault symbol: {{salary | currency}} <br>
+Currency in Rupees symbol: {{salary | currency:'INR'}}<br>
+Currency in Rupees Code: {{salary | currency:'INR':'code'}}<br>
+Currency in Euro symbol: {{salary | currency:'EUR'}}<br>
+Number with Decimal: {{salary | number:'4.4-5'}}<br><br>
+
+<h3>Date Pipes</h3>
+Date Normal without pipe: {{today}}<br>
+With Date pipe: {{today | date}}<br>
+With date:'full' pipe: {{today |date:'full'}}<br>
+With date:'fullDate' pipe: {{today | date:'fullDate'}}<br>
+With date:'long' pipe: {{today | date:'long'}}<br>
+With date:'medium' Pipe: {{today|date:'medium'}}<br>
+With date: 'short' Pipe: {{today | date:'short'}}<br>
+With date:'shortDate' Pipe: {{today | date:'shortDate'}}<br>
+With date: 'shortTime' Pipe: {{today |date:'shortTime'}}<br><br>
+
+<h3>Custom Pipes</h3>
+Without Using mypipe pipe: {{value}}<br>
+Using mypipe pipe: {{value | mypipe}}
+
+
+
+
+</div>
+<br>
+<hr>

@@ -1,33 +1,134 @@
 <div class="well col-sm-12" style="background: bisque">
-<form class="form-horizontal">
-  <div class="form-group">
-    <h1>Login Form</h1>
+  <div class="col-sm-10 col-sm-offset-2">
+    <button type="submit" class="btn btn-primary" data-target="#loginModal" data-toggle="modal">Login</button>
   </div>
-<div class="form-group">
-    <label for="InputName" class="control-label col-sm-2">Name</label>
-    <div class="col-sm-8">
-      <input class="form-control input-lg" type="text" id="inputName" placeholder="Enter Name"/>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <h1>Login Form</h1>
     </div>
-  </div>
-  <div class="form-group has-success">
-      <label class="col-xs-2 control-label">Password:</label>
-      <div class="col-xs-8">
-        <input type="text" class="form-control input-sm" placeholder="Your Password"/>
-        <span class="help-block">Strong Password</span>
+    <div class="modal" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login form</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="InputName" class="control-label col-sm-2">Name</label>
+              <div class="col-sm-8">
+                <input class="form-control input-lg" type="text" id="inputName" placeholder="Enter Name" />
+              </div>
+            </div>
+            <div class="form-group has-success">
+              <label class="col-xs-2 control-label">Password:</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control input-sm" placeholder="Your Password" />
+                <span class="help-block">Strong Password</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
 
-  <div class="form-group">
-    <div class="col-sm-10 col-sm-offset-2">
-      <button type="submit" class="btn btn-primary">Login</button>
+
+    <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+        <button type="submit" class="btn btn-primary" data-target="#loginModal">Login</button>
+      </div>
     </div>
-  </div>
-</form>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        What is panel
+      </div>
+      <div class="panel-body">
+        this is modified box of panel... this is modified box of panel...
+      </div>
+      <div class="panel-footer">
+        this is footer
+      </div>
+    </div>
+  </form>
 </div>
 
 <div class="well">
-    This is a well example box of bootstrap
+  This is a well example box of bootstrap
+  <span class="label label-success">bootstrap</span>
+</div>
+Notification
+<span class="badge badge-danger">2</span>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    What is panel
   </div>
-  <div class="well">
-      this is modified box
+  <div class="panel-body">
+    this is modified box of panel... this is modified box of panel...
+  </div>
+  <div class="panel-footer">
+    this is footer
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 80%">80%</div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 80%">80%</div>
+</div>
+<hr>
+<hr>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <div id="accordion1" class="panel-group">
+        <div class="panel panel-primary">
+          <div class="panel panel-heading">
+            <h2 class="panel-title">
+              <a href="#panelBodyOne" data-toggle="collapse" data-parent="#accordion">Asia</a>
+            </h2>
+          </div>
+          <div id="panelBodyOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>this is first panel body text message to show the panel content in the panel texxt for testing purpose</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<hr>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="main_accordion" class="panel-group">
+
+        <div class="panel panel-primary">
+          <button href="#panelBodyNew" class="panel-heading" data-toggle="collapse" data-parent="#main_accordion">
+            <div class="panel-title">
+              <a  >Web Next Technology dolor sit amet</a>
+            </div>
+          </button>
+        
+        <div id="panelBodyNew">
+        <div class="panel-body">
+          <p>Consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend Ut
+            urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet
+            velit.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
